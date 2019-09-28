@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Grade Calculator</title>
+</head>
+
+<body onload= "init()">
+    <div id="blackback">
+        <div id="content">
+            <h1 id="title">Grade Calculator</h1>
+            <div id="main">
+                <h2>Activites</h2>
+                <p>Give grades to the numeric activities:</p>
+                <table id="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Short Name</th>
+                        <th>Weight</th>
+                        <th>Grade</th>
+                        <th id="precent">Precent</th>
+                    </tr>
+                </table>
+                <h2>Results</h2>
+                <p id="result"></p>
+                <div id="something">
+                    <button type="button" id="button4" onclick="deleteRow()">DELETE ROW</button>
+                    <button type="button" id="button3" onclick="addRow()">ADD ROW</button>
+                    <button type="button" id="button1" onclick="getInputValueWeighted()">WEIGHTED </button>
+                    <button type="button" id="button2" onclick="getInputValueMean()">MEAN </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
